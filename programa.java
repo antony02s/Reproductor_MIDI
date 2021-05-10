@@ -64,6 +64,29 @@ public class programa{
         if(opcion_usuario==1){
             System.out.println();
             nombre_cancion("C:\\letras_proyecto.csv");
+            Scanner scanner_2 = new Scanner(System.in);
+            System.out.println("Ingrese el número del indice de una canción entre 1-14: ");
+            String usuario_2 = scanner.nextLine();
+            int opcion_usuario_2=Integer.parseInt(usuario_2);
+            for(int i=1;i<15;i++){
+                if(i==opcion_usuario_2){
+                    System.out.println("Buena elección");
+                    System.out.println();
+                    System.out.println("¿Te sabes la letra de la canción?");
+                    Scanner scanner_3 = new Scanner(System.in);
+                    System.out.println("Si te la sabes ingresa 1 para reproducir la canción, en caso contrario ingresa 2 para mostrar también la letra: ");
+                    String usuario_3 = scanner.nextLine();
+                    int opcion_usuario_3=Integer.parseInt(usuario_3);
+                    if(opcion_usuario_3==1){
+                        //codigo para repdorucir el audio de la canción
+                        System.out.println("funciona hasta aquí");
+                    }else{
+                        //codigo para reproducir auidio y mostrar letra
+                        System.out.println("funciona hasta aquí también");
+                    }
+
+                }
+            }
         }
         
     }

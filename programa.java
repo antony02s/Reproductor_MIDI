@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class programa{
     public static void nombre_cancion(String ruta){
+        //De aquí se se saca la lista de las canciones que se debe mostrar al usuario
         File file=new File(ruta);
         try{
             String strIP;
@@ -31,13 +32,13 @@ public class programa{
                     System.out.println("Enlace canción: "+str[4]);
                     System.out.println();
                     j++;
-                }   
+                }
             }
         }catch(FileNotFoundException e){
             e.printStackTrace();
         }
     }
-    public static void main(String[] args) {
+    public static void interfaz(){
         //MENU DE OPCIONES PARA EL USUARIO (INTERFAZ GRAFICA)
         System.out.println(" ______ _                              _          _                     _        " );
         System.out.println("| ___  (_)                            | |        | |                   | |       " );
@@ -53,7 +54,17 @@ public class programa{
 		System.out.println("|                    4. Detener Canción                                         |");
 		System.out.println("|                    5. Salir                                                   |");
         System.out.println("");
+    }
+    public static void main(String[] args) {
+        interfaz();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingresa una de las opciones: ");
+        String usuario = scanner.nextLine();
+        int opcion_usuario=Integer.parseInt(usuario);
+        if(opcion_usuario==1){
+            System.out.println();
+            nombre_cancion("C:\\letras_proyecto.csv");
+        }
         
-        nombre_cancion("C:\\letras_proyecto.csv");
     }
 }

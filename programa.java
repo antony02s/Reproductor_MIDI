@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,7 +17,7 @@ public class programa{
             String line;
             while((line=br.readLine())!=null){
                 num_lines++;
-                String [] str=line.split(";")
+                String [] str=line.split(";");
                 if(num_lines==1 || num_lines==53 || num_lines==138 || num_lines==168 ||
                     num_lines==235 || num_lines==300 || num_lines==370 || num_lines==404 
                     || num_lines==452 || num_lines==554 || num_lines==643 || num_lines==690 ||
@@ -32,6 +33,8 @@ public class programa{
                         j++;
                     }
             }
+        }catch(IOException e){
+            e.printStackTrace();
         }
     }
     public static void interfaz(){
@@ -52,117 +55,106 @@ public class programa{
         System.out.println("");
     }
     public static void letra_repro_cancion(int indice_cancion){
-        File file=new File("C:\\letras_proyecto.csv");
-        try{
-            String strIP;
-            Scanner sc=new Scanner(file);
-            int num_lines=0;
-            //int j=1;
-            while(sc.hasNext()){
-                String line=sc.nextLine();
+        int j=1;
+        int num_lines=0;
+        String file="C:\\letras_proyecto.csv";
+        try(BufferedReader br=new BufferedReader(new FileReader(file))){
+            String line;
+            while((line=br.readLine())!=null){
                 num_lines++;
                 if(indice_cancion==1){
                     if(num_lines>=2 && num_lines<=51){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==2){
                     if(num_lines>=54 && num_lines<=136){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==3){
                     if(num_lines>=139 && num_lines<=166){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==4){
                     if(num_lines>=169 && num_lines<=233){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==5){
                     if(num_lines>=236 && num_lines<=298){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==6){
                     if(num_lines>=301 && num_lines<=368){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==7){
                     if(num_lines>=371 && num_lines<=402){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==8){
                     if(num_lines>=405 && num_lines<=450){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==9){
                     if(num_lines>=453 && num_lines<=552){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==10){
                     if(num_lines>=555 && num_lines<=641){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==11){
                     if(num_lines>=644 && num_lines<=688){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==12){
                     if(num_lines>=691 && num_lines<=743){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==13){
                     if(num_lines>=746 && num_lines<=794){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }else if(indice_cancion==14){
                     if(num_lines>=797 && num_lines<=858){
-                        String[] str=line.split(";");
-                        strIP=Arrays.toString(str);
-                        strIP=strIP.replace(",", "");
-                        System.out.println(strIP);
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
+                }else if(indice_cancion==15){
+                    if(num_lines>=861 && num_lines<=918){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
+                }else if(indice_cancion==16){
+                    if(num_lines>=920 && num_lines<=943){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
+                }else if(indice_cancion==17){
+                    if(num_lines>=945 && num_lines<=1009){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
+                }else if(indice_cancion==18){
+                    if(num_lines>=1011 && num_lines<=1077){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
                     }
                 }
             }
-                
-        }catch(FileNotFoundException e){
+        }catch(IOException e){
             e.printStackTrace();
         }
     }
@@ -199,6 +191,5 @@ public class programa{
             }
 
         }
-        
     }
 }

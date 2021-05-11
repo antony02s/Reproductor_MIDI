@@ -62,3 +62,16 @@ Vamos a arreglar el problema de la lista de las canciones que se le debe mostrar
 - ¿Qué dificultades tengo?
 
 Por alguna razón el archivo no se está leyendo completo, por lo que faltan algunas canciones en la lista.
+
+## 11 de mayo -seguimiento
+- ¿Qué hemos hecho?
+
+Se ha construido la lista de las canciones y se ha arreglado el problema de la lectura del archivo
+
+- ¿Qué voy a hacer?
+
+Vamos a contruir la función para que el usuario puede ver la letra de la canción si lo desea
+
+- ¿Qué dificultades tengo?
+
+Ninguna.

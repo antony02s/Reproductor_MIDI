@@ -37,7 +37,7 @@ public class programa{
             e.printStackTrace();
         }
     }
-    public static void interfaz(){
+    public static void interfaz_1(){
         //MENU DE OPCIONES PARA EL USUARIO (INTERFAZ GRAFICA)
         System.out.println(" ______ _                              _          _                     _        " );
         System.out.println("| ___  (_)                            | |        | |                   | |       " );
@@ -48,11 +48,62 @@ public class programa{
         System.out.println("");
         System.out.println("|                    Ingrese una opción así:                                    |");
 		System.out.println("|                    1. Ver lista de reproducción                               |");
-		System.out.println("|                    2. Reproducir canción                                      |");
-		System.out.println("|                    3. Mostrar Letra                                           |");
-		System.out.println("|                    4. Detener Canción                                         |");
-		System.out.println("|                    5. Salir                                                   |");
+		System.out.println("|                    2. Salir                                                   |");
         System.out.println("");
+    }
+
+    public static void interfaz_2(){
+        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("|                          \\ \\|/ /                                        |");
+        System.out.println("|                           (O O)                                           |");
+        System.out.println("|               +--------oOO--(_)--------------+                            |");
+        System.out.println("|               |      EL RINCON DEL ROCK      |                            |"); 
+        System.out.println("|               +-----------------oOO----------+                            |");
+        System.out.println("|                           |__|__|                                         |");
+        System.out.println("|                            | | |                                          |");
+        System.out.println("|                           ooO Ooo                                         |");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("|                                                                           |");
+        System.out.println("|           Ingresa el número del indice de una canción                     |");
+        System.out.println("|     Recuerda que el indice va desde la canción #1 hasta la #18            |");
+        System.out.println("|---------------------------------------------------------------------------|");
+    }
+    public static void interfaz_3(){
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("|                          \\ \\|/ /                                        |");
+        System.out.println("|                           (O O)                                           |");
+        System.out.println("|               +--------oOO--(_)--------------+                            |");
+        System.out.println("|               |      EL RINCON DEL ROCK      |                            |"); 
+        System.out.println("|               +-----------------oOO----------+                            |");
+        System.out.println("|                           |__|__|                                         |");
+        System.out.println("|                            | | |                                          |");
+        System.out.println("|                           ooO Ooo                                         |");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("|                      Excelente elección!!!                                |");
+        System.out.println("|                     ¿Te sabes la letra?                                   |");
+        System.out.println("|    Si la respues es Sí ingresa 1 para reproducir el audio de la canción   |");
+        System.out.println("|                                                                           |");
+        System.out.println("|   Si no te sabes la letra no te preocupes, nosotros te ayudamos           |");
+        System.out.println("|         Ingresa 2 para ver la letra y reproducir el audio                 |");
+        System.out.println("|---------------------------------------------------------------------------|");
+        System.out.println("|     RECUERDA, NO PUEDES DETENER LA CANCION Y VOLVERLA A REPRODUCIR        |");
+        System.out.println("|          LA IDEA ES QUE TE DIVIERTAS HACIENDO EL KARAOKE COMPLETO         |");
+        System.out.println("|---------------------------------------------------------------------------|");
+    }
+    public static void interfaz_4(){
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("|                          \\ \\|/ /                                        |");
+        System.out.println("|                           (O O)                                           |");
+        System.out.println("|               +--------oOO--(_)--------------+                            |");
+        System.out.println("|               |      EL RINCON DEL ROCK      |                            |"); 
+        System.out.println("|               +-----------------oOO----------+                            |");
+        System.out.println("|                           |__|__|                                         |");
+        System.out.println("|                            | | |                                          |");
+        System.out.println("|                           ooO Ooo                                         |");
+        System.out.println("-----------------------------------------------------------------------------");
+        System.out.println("|                      Para escuchar otra canción ingresa 1                 |");
+        System.out.println("|                     Si deseas cerrar el programa ingresa 2                |");
+        System.out.println("|---------------------------------------------------------------------------|");
     }
     public static void letra_repro_cancion(int indice_cancion){
         int j=1;
@@ -152,6 +203,16 @@ public class programa{
                         line=line.replace(";", " ");
                         System.out.println(line);
                     }
+                }else if(indice_cancion==19){
+                    if(num_lines>=1080 && num_lines<=1105){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
+                }else if(indice_cancion==20){
+                    if(num_lines>=1108 && num_lines<=1141){
+                        line=line.replace(";", " ");
+                        System.out.println(line);
+                    }
                 }
             }
         }catch(IOException e){
@@ -159,37 +220,76 @@ public class programa{
         }
     }
     public static void main(String[] args) {
-        //se despliega la interfaz para el usuario, MENU DE OPCIONES
-        interfaz();
-        // El usuario elige la opción que desea implementar
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingresa una de las opciones: ");
-        String usuario = scanner.nextLine();
-        int opcion_usuario=Integer.parseInt(usuario);
-        //El usuario elige la opción 1
-        if(opcion_usuario==1){
-            System.out.println();
-            nombre_cancion("C:\\letras_proyecto.csv");
+        String [] rutas={"canciones\\Rosas.mid", "canciones\\Me_gustas_tu.mid", "canciones\\Rayando_el_sol.mid", "canciones\\A_Dios_le_pido.mid"
+        , "canciones\\La_camisa_negra.mid", "canciones\\Vivo_por_ella.mid", "canciones\\Maldito_duende.mid", "canciones\\En_algun_lugar.mid",
+        "canciones\\Como_Camaron.mid", "canciones\\La_Gasolina.mid", "canciones\\dame_amor.mid", "canciones\\Laura.mid","canciones\\Nada_valgo_sin_tu_amor.mid",
+        "canciones\\Vino_Tinto.mid", "canciones\\Cuando_Sea_Grande.mid", "canciones\\Cielo.mid", "canciones\\Por_la_raja_de_tu_falda.mid",
+        "canciones\\Hijo_de_la_luna.mid", "soda estereo","canciones\\Oye_mi_amor.mid"};
+        Audio obj= new Audio();
+        Scanner scanner_4 = new Scanner(System.in);
+        System.out.println("Ingresa 1 para iniciar el programa");
+        String usuario_4 = scanner_4.nextLine();
+        int opcion_usuario_4=Integer.parseInt(usuario_4);
+        do{
+            //se despliega la interfaz para el usuario, MENU DE OPCIONES
+            interfaz_1();
+            // El usuario elige la opción que desea implementar
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ingresa una de las opciones: ");
+            String usuario = scanner.nextLine();
+            int opcion_usuario=Integer.parseInt(usuario);
+            //El usuario elige la opción 1
+            if(opcion_usuario==1){
+                System.out.println();
+                nombre_cancion("letras_proyecto.csv");
 
-            Scanner scanner_2 = new Scanner(System.in);
-            System.out.println("Ingrese el número del indice de una canción entre 1-14: ");
-            String usuario_2 = scanner.nextLine();
-            int opcion_usuario_2=Integer.parseInt(usuario_2);
+                Scanner scanner_2 = new Scanner(System.in);
+                interfaz_2();
+                String usuario_2 = scanner.nextLine();
+                int opcion_usuario_2=Integer.parseInt(usuario_2);
 
-            System.out.println();
+                System.out.println();
 
-            Scanner scanner_3 = new Scanner(System.in);
-            System.out.println("Si te sabes la canción, ingresa 1 para reproducir el audio.");
-            System.out.println("En caso contrario, ingresa 2 para reproducir el audio y que se te muestre la letra.");
-            String usuario_3 = scanner_3.nextLine();
-            int opcion_usuario_3=Integer.parseInt(usuario_3);
+                Scanner scanner_3 = new Scanner(System.in);
+                interfaz_3();
+                String usuario_3 = scanner_3.nextLine();
+                int opcion_usuario_3=Integer.parseInt(usuario_3);
 
-            if(opcion_usuario_3==1){
-                System.out.println("Falta el codigo para reproducir audio");
-            }else if(opcion_usuario_3==2){
-                letra_repro_cancion(opcion_usuario_2);
+                if(opcion_usuario_3==1){
+                    obj.seleccionarCancion(rutas[opcion_usuario_2]);
+                    obj.reproducir();
+                    Scanner scanner_6 = new Scanner(System.in);
+                    System.out.println();
+                    System.out.println("Ingrese 1 para detener la canción");
+                    String usuario_6 = scanner_6.nextLine();
+                    int opcion_usuario_6=Integer.parseInt(usuario_6);
+                    if(opcion_usuario_6==1){
+                        System.out.println();
+                        obj.detener();
+                    }
+                }else if(opcion_usuario_3==2){
+                    letra_repro_cancion(opcion_usuario_2);
+                    obj.seleccionarCancion(rutas[opcion_usuario_2]);
+                    obj.reproducir();
+                    Scanner scanner_7 = new Scanner(System.in);
+                    System.out.println();
+                    System.out.println("Ingrese 1 para detener la canción");
+                    String usuario_7 = scanner_7.nextLine();
+                    int opcion_usuario_7=Integer.parseInt(usuario_7);
+                    if(opcion_usuario_7==1){
+                        obj.detener();
+                    }
+                }
+                interfaz_4();
+                Scanner scanner_5 = new Scanner(System.in);
+                String usuario_5 = scanner_5.nextLine();
+                int opcion_usuario_5=Integer.parseInt(usuario_5);
+                
+                opcion_usuario_4=opcion_usuario_5;
+            }else if(opcion_usuario==2){
+                break;
             }
+        }while(opcion_usuario_4==1);
 
-        }
     }
 }

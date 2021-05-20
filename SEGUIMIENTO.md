@@ -88,3 +88,16 @@ Ninguna.
  ¿Que dificultades tengo?
 
  ninguna
+
+##19 de mayo -seguimiento 
+-¿Que hemos hecho?
+
+se ha terminado la interfaz grafica 
+
+¿Que voy a hacer?
+
+corregimos unos errores que se encontraban en la interfaz grafica 
+
+¿Que dificultades tengo?
+
+ninguna

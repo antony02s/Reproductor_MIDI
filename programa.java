@@ -39,13 +39,17 @@ public class programa{
     }
     public static void interfaz_1(){
         //MENU DE OPCIONES PARA EL USUARIO (INTERFAZ GRAFICA)
-        System.out.println(" ______ _                              _          _                     _        " );
-        System.out.println("| ___  (_)                            | |        | |                   | |       " );
-        System.out.println("| |_/ / _  ___   _____ ____    __     | |   ___  | |  _ __   ___   ___ | |  __   " );
-        System.out.println("|    / | || '_\\ / __/  _  \\| '_  \\ / _` |/ _ \\ | | |  __| / _  \\/  _ | | / /   " );
-        System.out.println("| | \\\\ || | | | | (_ | (_) | | | || (_| |  __/ | | | |   |(_)  | (__ | <  |    " );
-        System.out.println("\\ _|\\ _||_|_| |_| \\__ \\___/|_| |_| \\__,_| \\___ |_| |_|    \\___/  \\___|| \\_\\   " );
-        System.out.println("");
+        System.out.println("      ______ _                             _      _                  _            ");
+        System.out.println("      | ___ (_)                           | |    | |                | |           "); 
+        System.out.println("      | |_/ /_ _ __   ___ ___  _ __     __| | ___| |  _ __ ___   ___| | __        "); 
+        System.out.println("      |    /| | '_ \\ / __/ _ \\| '_ \\   / _` |/ _ \\ | | '__/ _ \\ / __| |/ /        ");
+        System.out.println("      | |\\ \\| | | | | (_| (_) | | | | | (_| |  __/ | | | | (_) | (__|   <         ");
+        System.out.println("      \\_| \\_|_|_| |_|\\___\\___/|_| |_|  \\__,_|\\___|_| |_|  \\___/ \\___|_|\\_\\         ");                                                                                                         
+        System.out.println("                                                                                   " );
+        System.out.println("                                                                                   ");  
+        System.out.println("                                                                                   ");
+        System.out.println("                                                                                  " );
+        System.out.println("                                                                                 " );
         System.out.println("|                    Ingrese una opción así:                                    |");
 		System.out.println("|                    1. Ver lista de reproducción                               |");
 		System.out.println("|                    2. Salir                                                   |");
@@ -53,7 +57,7 @@ public class programa{
     }
 
     public static void interfaz_2(){
-        System.out.println("----------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------");
         System.out.println("|                          \\ \\|/ /                                        |");
         System.out.println("|                           (O O)                                           |");
         System.out.println("|               +--------oOO--(_)--------------+                            |");

@@ -75,3 +75,16 @@ Vamos a contruir la función para que el usuario puede ver la letra de la canci�
 - ¿Qué dificultades tengo?
 
 Ninguna.
+
+##15 de mayo -seguimiento 
+-¿Que hemos hecho?
+
+ se ha perfeccionado el reproductor musical 
+
+ ¿Que voy a hacer?
+
+ se han acomodado algunos detalles que tenia el programa
+
+ ¿Que dificultades tengo?
+
+ ninguna

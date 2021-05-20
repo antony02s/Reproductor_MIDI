@@ -22,7 +22,7 @@ public class programa{
                     num_lines==235 || num_lines==300 || num_lines==370 || num_lines==404 
                     || num_lines==452 || num_lines==554 || num_lines==643 || num_lines==690 ||
                     num_lines==745 || num_lines==796 || num_lines==860 || num_lines==919 || num_lines==944
-                    || num_lines==1010){
+                    || num_lines==1010|| num_lines==1079 || num_lines==1107 ){
                         System.out.println("Canción "+j+" "+":");
                         System.out.println("Nombre canción: "+str[0]);
                         System.out.println("Autor: "+str[1]);
@@ -45,15 +45,10 @@ public class programa{
         System.out.println("      |    /| | '_ \\ / __/ _ \\| '_ \\   / _` |/ _ \\ | | '__/ _ \\ / __| |/ /        ");
         System.out.println("      | |\\ \\| | | | | (_| (_) | | | | | (_| |  __/ | | | | (_) | (__|   <         ");
         System.out.println("      \\_| \\_|_|_| |_|\\___\\___/|_| |_|  \\__,_|\\___|_| |_|  \\___/ \\___|_|\\_\\         ");                                                                                                         
-        System.out.println("                                                                                   " );
-        System.out.println("                                                                                   ");  
-        System.out.println("                                                                                   ");
-        System.out.println("                                                                                  " );
-        System.out.println("                                                                                 " );
-        System.out.println("|                    Ingrese una opción así:                                    |");
-		System.out.println("|                    1. Ver lista de reproducción                               |");
-		System.out.println("|                    2. Salir                                                   |");
-        System.out.println("");
+        System.out.println("                    Ingrese una opción así:                                    ");
+		System.out.println("                    1. Ver lista de reproducción                               ");
+		System.out.println("                    2. Salir                                                   ");
+        System.out.println();
     }
 
     public static void interfaz_2(){
@@ -69,7 +64,7 @@ public class programa{
         System.out.println("-----------------------------------------------------------------------------");
         System.out.println("|                                                                           |");
         System.out.println("|           Ingresa el número del indice de una canción                     |");
-        System.out.println("|     Recuerda que el indice va desde la canción #1 hasta la #18            |");
+        System.out.println("|     Recuerda que el indice va desde la canción #1 hasta la #20            |");
         System.out.println("|---------------------------------------------------------------------------|");
     }
     public static void interfaz_3(){
@@ -251,6 +246,7 @@ public class programa{
                 interfaz_2();
                 String usuario_2 = scanner.nextLine();
                 int opcion_usuario_2=Integer.parseInt(usuario_2);
+                System.out.println();
 
                 System.out.println();
 
@@ -258,9 +254,12 @@ public class programa{
                 interfaz_3();
                 String usuario_3 = scanner_3.nextLine();
                 int opcion_usuario_3=Integer.parseInt(usuario_3);
+                System.out.println();
 
                 if(opcion_usuario_3==1){
-                    obj.seleccionarCancion(rutas[opcion_usuario_2]);
+                    System.out.println("REPRODUCIENDO LA CANCION");
+                    System.out.println();
+                    obj.seleccionarCancion(rutas[opcion_usuario_2-1]);
                     obj.reproducir();
                     Scanner scanner_6 = new Scanner(System.in);
                     System.out.println();
@@ -272,8 +271,10 @@ public class programa{
                         obj.detener();
                     }
                 }else if(opcion_usuario_3==2){
+                    System.out.println("REPRODUCIENDO LA CANCION");
+                    System.out.println();
                     letra_repro_cancion(opcion_usuario_2);
-                    obj.seleccionarCancion(rutas[opcion_usuario_2]);
+                    obj.seleccionarCancion(rutas[opcion_usuario_2-1]);
                     obj.reproducir();
                     Scanner scanner_7 = new Scanner(System.in);
                     System.out.println();

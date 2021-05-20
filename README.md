@@ -7,5 +7,8 @@ el rincon del rock es un progama que va a ser util para hacer karaoke con alguna
 - Antony Sánchez
 
 ## Recursos
-http://www.patorjk.com/software/taag/#p=display&f=Doom&t=Rincon%20del%20rock%20
-ascii art comics
+-http://www.patorjk.com/software/taag/#p=display&f=Doom&t=Rincon%20del%20rock%20
+-ascii art comics
+-busquedas por google
+-videos y tutoriales 
+-proyecto hecho por el docente
